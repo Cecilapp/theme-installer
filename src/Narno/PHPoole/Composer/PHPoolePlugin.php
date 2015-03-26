@@ -6,7 +6,7 @@ use Composer\Composer;
 use Composer\IO\IOInterface;
 use Narno\PHPoole\Composer\Installer\Installer;
 
-class SpressPlugin implements PluginInterface
+class PHPoolePlugin implements PluginInterface
 {
     /**
      * Apply plugin modifications to composer
