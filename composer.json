@@ -17,15 +17,15 @@
       "Narno\\PHPoole\\Composer": "src/"
     }
   },
-  "require": {
-    "composer-plugin-api": "*"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "extra": {
     "class": "Narno\\PHPoole\\Composer\\PHPoolePlugin",
     "branch-alias": {
       "dev-master": "1.0.x-dev"
     }
-  }
+  },
+  "require": {
+    "composer-plugin-api": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
