@@ -20,6 +20,12 @@
       "Narno\\PHPoole\\Composer": ["src/"]
     }
   },
+  "extra": {
+    "class": "Narno\\PHPoole\\Composer\\PHPoolePlugin",
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "extra": {
