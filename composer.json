@@ -29,5 +29,5 @@
   "require-dev": {
     "composer/composer": "1.*"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "dev"
 }
