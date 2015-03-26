@@ -12,12 +12,9 @@
       "role": "Developer"
     }
   ],
-  "require": {
-    "composer-plugin-api": "*"
-  },
   "autoload": {
     "psr-0": {
-      "Narno\\PHPoole\\Composer": ["src/"]
+      "Narno\\PHPoole\\Composer": "src/"
     }
   },
   "extra": {
@@ -25,6 +22,9 @@
     "branch-alias": {
       "dev-master": "1.0.x-dev"
     }
+  },
+  "require": {
+    "composer-plugin-api": "*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
