@@ -24,7 +24,7 @@
     }
   },
   "require": {
-    "composer-plugin-api": "*"
+    "composer-plugin-api": "^1.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
