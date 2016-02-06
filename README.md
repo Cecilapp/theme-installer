@@ -8,7 +8,11 @@ Package type supported:
  
 ## Usage
 
-Add the following to your PHPoole-library theme or plugin composer.json:
+Add the following to your theme or plugin ```composer.json```:
+
+```json
+"type": "phpoole-theme-or-plugin",
+```
 
 ```json
 "require": {
