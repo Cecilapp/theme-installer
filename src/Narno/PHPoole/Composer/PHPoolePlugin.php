@@ -1,9 +1,9 @@
 <?php
 namespace Narno\PHPoole\Composer;
 
-use Composer\Plugin\PluginInterface;
 use Composer\Composer;
 use Composer\IO\IOInterface;
+use Composer\Plugin\PluginInterface;
 use Narno\PHPoole\Composer\Installer\Installer;
 
 class PHPoolePlugin implements PluginInterface
@@ -13,7 +13,7 @@ class PHPoolePlugin implements PluginInterface
      *
      * @param Composer $composer
      * @param IOInterface $io
-    */
+     */
     public function activate(Composer $composer, IOInterface $io)
     {
         $installer = new Installer($io, $composer);
