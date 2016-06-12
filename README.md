@@ -1,24 +1,24 @@
 # PHPoole-installer
 
-Composer installer for PHPoole themes and plugins.
+Composer installer for [PHPoole-library](https://github.com/Narno/PHPoole-library) themes and plugins.
 
 Package type supported:
-* phpoole-theme 
-* phpoole-plugin
+* ```phpoole-theme```
+* ```phpoole-plugin```
  
-Installation
-------------
+## Usage
 
-Add the following to your PHPoole theme or plugin composer.json:
+Add the following to your theme or plugin ```composer.json```:
+
+```json
+"type": "phpoole-theme-or-plugin",
+```
 
 ```json
 "require": {
-    "narno/phpoole-installer": "1.0.x-dev"
+    "narno/phpoole-installer": "1.1.x-dev"
 }
 ```
-
-Name
-----
 
 ```json
 "extra": {
