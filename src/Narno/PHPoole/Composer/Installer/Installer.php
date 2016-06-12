@@ -1,5 +1,4 @@
 <?php
-
 namespace Narno\PHPoole\Composer\Installer;
 
 use Composer\Installer\LibraryInstaller;
@@ -10,7 +9,7 @@ class Installer extends LibraryInstaller
 {
     const TYPE_PLUGIN = 'phpoole-plugin';
     const TYPE_THEME  = 'phpoole-theme';
-    
+
     /**
      * {@inheritDoc}
      */
@@ -21,17 +20,14 @@ class Installer extends LibraryInstaller
             case self::TYPE_PLUGIN:
                 $dir = 'plugins';
             break;
-            
             case self::TYPE_THEME:
                 $dir = 'themes';
             break;
         }
-        
-        $name  = $this->getExtraName($package);
-    
-        return $dir . '/' . $name;
+
+        return $dir.'/'.$this->getExtraName($package);
     }
-    
+
     /**
      * {@inheritDoc}
      */
@@ -42,7 +38,7 @@ class Installer extends LibraryInstaller
             self::TYPE_THEME
         ], true);
     }
-    
+
     /**
      * Get the theme or plugin name from the package extra info
      *
@@ -50,17 +46,17 @@ class Installer extends LibraryInstaller
      * @throws \InvalidArgumentException
      *
      * @return string
-    */
+     */
     protected function getExtraName(PackageInterface $package)
     {
         $extraData = $package->getExtra();
-        
+
         if (!array_key_exists('name', $extraData)) {
             throw new \InvalidArgumentException(
                 'Unable to install theme or plugin, it must include the name in the extra field of composer.json.'
             );
         }
-        
+
         return $extraData['name'];
     }
 }
