@@ -1,5 +1,5 @@
 <?php
-namespace Narno\PHPoole\Composer\Installer;
+namespace PHPoole\PHPoole\Composer\Installer;
 
 use Composer\Installer\LibraryInstaller;
 use Composer\Package\PackageInterface;
@@ -7,8 +7,8 @@ use Composer\Repository\InstalledRepositoryInterface;
 
 class Installer extends LibraryInstaller
 {
-    const TYPE_PLUGIN = 'phpoole-plugin';
     const TYPE_THEME  = 'phpoole-theme';
+    const TYPE_PLUGIN = 'phpoole-plugin';
 
     /**
      * {@inheritDoc}
@@ -17,11 +17,11 @@ class Installer extends LibraryInstaller
     {
         switch($package->getType())
         {
-            case self::TYPE_PLUGIN:
-                $dir = 'plugins';
-            break;
             case self::TYPE_THEME:
                 $dir = 'themes';
+            break;
+            case self::TYPE_PLUGIN:
+                $dir = 'plugins';
             break;
         }
 
@@ -34,13 +34,13 @@ class Installer extends LibraryInstaller
     public function supports($packageType)
     {
         return in_array($packageType, [
-            self::TYPE_PLUGIN,
-            self::TYPE_THEME
+            self::TYPE_THEME,
+            self::TYPE_PLUGIN
         ], true);
     }
 
     /**
-     * Get the theme or plugin name from the package extra info
+     * Get the theme (or plugin) name from the package extra info
      *
      * @param PackageInterface $package
      * @throws \InvalidArgumentException
