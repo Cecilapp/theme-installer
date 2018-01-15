@@ -1,10 +1,10 @@
 <?php
-namespace Narno\PHPoole\Composer;
+namespace PHPoole\PHPoole\Composer;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
-use Narno\PHPoole\Composer\Installer\Installer;
+use PHPoole\PHPoole\Composer\Installer\Installer;
 
 class PHPoolePlugin implements PluginInterface
 {
