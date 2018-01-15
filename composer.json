@@ -1,8 +1,8 @@
 {
-  "name": "narno/phpoole-installer",
-  "description": "Installer for PHPoole themes and plugins",
+  "name": "phpoole/theme-installer",
+  "description": "Installer for PHPoole themes",
   "type": "composer-plugin",
-  "keywords": ["phpoole", "installer", "themes", "plugins"],
+  "keywords": ["phpoole", "installer", "themes"],
   "license": "MIT",
   "authors": [
     {
@@ -17,15 +17,14 @@
   },
   "autoload": {
     "psr-0": {
-      "Narno\\PHPoole\\Composer": "src/"
+      "PHPoole\\PHPoole\\Composer": "src/"
     }
   },
   "extra": {
-    "class": "Narno\\PHPoole\\Composer\\PHPoolePlugin",
+    "class": "PHPoole\\PHPoole\\Composer\\PHPoolePlugin",
     "branch-alias": {
-      "dev-master": "1.1.x-dev"
+      "dev-master": "1.x-dev"
     }
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "minimum-stability": "dev"
 }
