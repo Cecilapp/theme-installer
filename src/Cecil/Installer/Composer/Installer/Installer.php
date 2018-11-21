@@ -1,5 +1,5 @@
 <?php
-namespace PHPoole\PHPoole\Composer\Installer;
+namespace Cecil\Installer\Composer\Installer;
 
 use Composer\Installer\LibraryInstaller;
 use Composer\Package\PackageInterface;
@@ -7,7 +7,7 @@ use Composer\Repository\InstalledRepositoryInterface;
 
 class Installer extends LibraryInstaller
 {
-    const TYPE_THEME  = 'phpoole-theme';
+    const TYPE_THEME  = 'cecil-theme';
 
     /**
      * {@inheritDoc}
