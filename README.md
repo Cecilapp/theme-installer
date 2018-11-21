@@ -1,18 +1,18 @@
-# PHPoole theme installer
+# Cecil theme installer
 
-[Composer](https://getcomposer.org) installer for [PHPoole](https://phpoole.org) themes.
- 
+[Composer](https://getcomposer.org) installer for [Cecil](https://cecil.app) themes.
+
 ## Usage
 
 Add the following to your theme `composer.json`:
 
 ```json
-"type": "phpoole-theme",
+"type": "cecil-theme",
 ```
 
 ```json
 "require": {
-    "phpoole/theme-installer": "^1.2"
+    "cecil/theme-installer": "^1.2"
 }
 ```
 
