@@ -1,12 +1,12 @@
 <?php
-namespace PHPoole\PHPoole\Composer;
+namespace Cecil\Installer\Composer;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
-use PHPoole\PHPoole\Composer\Installer\Installer;
+use Cecil\Installer\Composer\Installer\Installer;
 
-class PHPoolePlugin implements PluginInterface
+class CecilPlugin implements PluginInterface
 {
     /**
      * Apply plugin modifications to composer

@@ -1,14 +1,18 @@
 {
-  "name": "phpoole/theme-installer",
-  "description": "Installer for PHPoole themes",
+  "name": "cecil/theme-installer",
+  "description": "Installer for Cecil themes",
   "type": "composer-plugin",
-  "keywords": ["phpoole", "installer", "themes"],
+  "keywords": [
+    "cecil",
+    "installer",
+    "themes"
+  ],
   "license": "MIT",
   "authors": [
     {
       "name": "Arnaud Ligny",
       "email": "arnaud@ligny.org",
-      "homepage": "http://narno.org",
+      "homepage": "https://arnaudligny.fr",
       "role": "Developer"
     }
   ],
@@ -17,11 +21,11 @@
   },
   "autoload": {
     "psr-0": {
-      "PHPoole\\PHPoole\\Composer": "src/"
+      "Cecil\\Installer\\Composer": "src/"
     }
   },
   "extra": {
-    "class": "PHPoole\\PHPoole\\Composer\\PHPoolePlugin",
+    "class": "Cecil\\Installer\\Composer\\CecilPlugin",
     "branch-alias": {
       "dev-master": "1.x-dev"
     }
