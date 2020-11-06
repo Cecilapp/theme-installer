@@ -12,7 +12,7 @@ Add the following to your theme `composer.json`:
 
 ```json
 "require": {
-    "cecil/theme-installer": "^1.3"
+    "cecil/theme-installer": "^1.4"
 }
 ```
 
