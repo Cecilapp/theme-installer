@@ -1,10 +1,10 @@
 # Cecil theme installer
 
-> [Composer](https://getcomposer.org) installer for [Cecil](https://cecil.app) themes.
+> [Composer](https://getcomposer.org) installer for [Cecil](https://cecil.app)'s themes.
 
 ## Usage
 
-Add the following to your theme `composer.json`:
+Add the following lines the `composer.json` file of your theme:
 
 ```json
 "type": "cecil-theme",
