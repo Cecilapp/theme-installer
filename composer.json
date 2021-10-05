@@ -1,6 +1,6 @@
 {
   "name": "cecil/theme-installer",
-  "description": "Installer for Cecil themes",
+  "description": "Installer for Cecil's themes",
   "type": "composer-plugin",
   "keywords": [
     "cecil",
