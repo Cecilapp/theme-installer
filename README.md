@@ -18,6 +18,12 @@ Add the following lines to the `composer.json` file of your theme:
 
 ```json
 "extra": {
-  "name": "THEME_NAME",
+  "name": "<THEME_NAME>",
 }
 ```
+
+## License
+
+_Cecil theme installer_ is a free software distributed under the terms of the MIT license.
+
+© Arnaud Ligny
