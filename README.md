@@ -1,6 +1,6 @@
 # Cecil theme installer
 
-> The [Composer](https://getcomposer.org) installer for [Cecil](https://cecil.app)'s themes.
+The [Composer](https://getcomposer.org) installer for [Cecil](https://cecil.app)'s themes.
 
 ## Usage
 
