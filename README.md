@@ -18,7 +18,7 @@ Add the following lines to the `composer.json` file of your theme:
 
 ```json
 "extra": {
-  "name": "<THEME_NAME>",
+  "name": "<theme_name>",
 }
 ```
 
