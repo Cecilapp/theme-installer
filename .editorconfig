@@ -15,6 +15,3 @@ indent_size = 4
 
 [*.md]
 trim_trailing_whitespace = false
-
-[*.twig]
-insert_final_newline = false
