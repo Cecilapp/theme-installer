@@ -1,12 +1,14 @@
 {
   "name": "cecil/theme-installer",
-  "description": "Installer for Cecil's themes",
+  "description": "Composer installer for Cecil's themes",
   "type": "composer-plugin",
   "keywords": [
     "cecil",
+    "composer-plugin",
     "installer",
     "themes"
   ],
+  "homepage": "https://cecil.app",
   "license": "MIT",
   "authors": [
     {
@@ -17,14 +19,21 @@
     }
   ],
   "require": {
-    "composer-plugin-api": ">=2.0"
+    "php": "^8.1",
+    "composer-plugin-api": "^2.0"
   },
   "require-dev": {
-    "composer/composer": ">=2.0"
+    "composer/composer": "^2.0",
+    "phpunit/phpunit": "^10.5"
   },
   "autoload": {
-    "psr-0": {
-      "Cecil\\Installer\\Composer": "src/"
+    "psr-4": {
+      "Cecil\\Installer\\Composer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Cecil\\Installer\\Composer\\Tests\\": "tests/"
     }
   },
   "extra": {
@@ -33,6 +42,7 @@
       "dev-master": "2.x-dev"
     }
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "scripts": {
+    "test": "phpunit"
+  }
 }
